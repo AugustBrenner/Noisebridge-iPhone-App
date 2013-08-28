@@ -1,0 +1,18 @@
+//
+//  main.m
+//  Noisebridge
+//
+//  Created by Ryan Brenner on 8/28/13.
+//  Copyright (c) 2013 AugustRyanBrenner. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+#import "NoisebridgeAppDelegate.h"
+
+int main(int argc, char *argv[])
+{
+    @autoreleasepool {
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([NoisebridgeAppDelegate class]));
+    }
+}
