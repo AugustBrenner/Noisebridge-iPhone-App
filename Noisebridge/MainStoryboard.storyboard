@@ -12,49 +12,10 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pX-86-iBs" customClass="FixitButton">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="134" id="zTk-l9-FjD"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="NoisebridgeBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="sj1-MQ-MYE"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pX-86-iBs">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ss6-nn-AFd" customClass="FixitButton">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="137" id="YjZ-R5-WLL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNB-4c-n0u" customClass="FixitButton">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFz-me-KLR" customClass="FixitButton">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="134" id="6AE-4c-5uN"/>
-                                    <constraint firstAttribute="height" constant="137" id="6Mb-DF-Rgo"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal">
+                                <state key="normal" image="tag@2x.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -62,45 +23,107 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="styleId" value="homeButtons"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleId" value="greyHomeButton"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="3UZ-tF-b31" kind="modal" id="E38-if-lBI"/>
+                                    <segue destination="vw2-QG-11w" kind="modal" modalTransitionStyle="flipHorizontal" id="hGG-aF-mbW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icl-gB-bsR" customClass="OpenGateButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ss6-nn-AFd">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="102" id="ESc-nb-xPw"/>
+                                    <constraint firstAttribute="height" constant="137" id="YjZ-R5-WLL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
-                                <state key="normal" title="You want to unlock the mother fucking door?">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="beer-mug@2x.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleId" value="greyHomeButton"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNB-4c-n0u">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="calendar@2x.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleId" value="whiteHomeButton"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFz-me-KLR">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="137" id="OHY-oc-6OA"/>
+                                    <constraint firstAttribute="width" constant="136" id="kX4-3y-AVl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" image="wrench@2x.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleId" value="whiteHomeButton"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="3UZ-tF-b31" kind="modal" modalTransitionStyle="flipHorizontal" id="E38-if-lBI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icl-gB-bsR">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="36"/>
+                                <state key="normal" title="  Gate Open" image="lock@2x.png">
+                                    <color key="titleColor" red="0.27450980390000002" green="0.28235294119999998" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleId" value="whiteHomeButton"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="doorUnlock:" destination="2" eventType="touchUpInside" id="QPq-QM-9Cj"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000014" contentMode="scaleToFill" image="NoisebridgeBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="0lL-Sa-LMh">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="PAi-Ss-oin"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.27450980390000002" green="0.28235294119999998" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="5pX-86-iBs" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="0vi-6o-Fs5"/>
                             <constraint firstItem="CFz-me-KLR" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="5Za-Rf-H1Y"/>
+                            <constraint firstAttribute="trailing" secondItem="sj1-MQ-MYE" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="5cE-mK-a5Y"/>
+                            <constraint firstItem="xNB-4c-n0u" firstAttribute="top" secondItem="ss6-nn-AFd" secondAttribute="top" type="default" id="A3d-Ex-5cc"/>
                             <constraint firstAttribute="trailing" secondItem="icl-gB-bsR" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Bi7-nk-NKc"/>
-                            <constraint firstItem="ss6-nn-AFd" firstAttribute="trailing" secondItem="CFz-me-KLR" secondAttribute="trailing" type="default" id="DyU-IN-BiH"/>
-                            <constraint firstItem="CFz-me-KLR" firstAttribute="bottom" secondItem="5pX-86-iBs" secondAttribute="bottom" type="default" id="HhE-qh-cwf"/>
+                            <constraint firstItem="0lL-Sa-LMh" firstAttribute="top" secondItem="sj1-MQ-MYE" secondAttribute="top" type="default" id="Cvh-0x-vqL"/>
+                            <constraint firstItem="5pX-86-iBs" firstAttribute="leading" secondItem="CFz-me-KLR" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="K4O-Rj-ZlI"/>
                             <constraint firstItem="ss6-nn-AFd" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="LCm-4K-9SJ"/>
-                            <constraint firstItem="ss6-nn-AFd" firstAttribute="top" secondItem="3" secondAttribute="top" constant="176" id="XBY-1c-py9"/>
-                            <constraint firstItem="xNB-4c-n0u" firstAttribute="leading" secondItem="5pX-86-iBs" secondAttribute="leading" type="default" id="XxX-ER-k1R"/>
+                            <constraint firstItem="xNB-4c-n0u" firstAttribute="top" secondItem="5pX-86-iBs" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Ni8-ne-aPG"/>
+                            <constraint firstItem="xNB-4c-n0u" firstAttribute="leading" secondItem="ss6-nn-AFd" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Wde-84-wRt"/>
+                            <constraint firstItem="0lL-Sa-LMh" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ZVZ-gh-tLc"/>
+                            <constraint firstAttribute="trailing" secondItem="xNB-4c-n0u" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="bA7-UI-3tR"/>
+                            <constraint firstItem="0lL-Sa-LMh" firstAttribute="top" secondItem="3" secondAttribute="top" constant="94" id="cbE-se-mLH"/>
+                            <constraint firstItem="icl-gB-bsR" firstAttribute="top" secondItem="xNB-4c-n0u" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ee9-nf-JLD"/>
+                            <constraint firstItem="5pX-86-iBs" firstAttribute="leading" secondItem="xNB-4c-n0u" secondAttribute="leading" type="default" id="ewu-z5-SYR"/>
                             <constraint firstItem="CFz-me-KLR" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="f74-11-gEj"/>
-                            <constraint firstAttribute="trailing" secondItem="xNB-4c-n0u" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="gTp-Bt-Vk5"/>
+                            <constraint firstAttribute="trailing" secondItem="0lL-Sa-LMh" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="fsd-Zp-kGu"/>
                             <constraint firstItem="5pX-86-iBs" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="hti-Z2-NbS"/>
                             <constraint firstItem="icl-gB-bsR" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="mDx-Qy-LA7"/>
-                            <constraint firstItem="xNB-4c-n0u" firstAttribute="bottom" secondItem="ss6-nn-AFd" secondAttribute="bottom" type="default" id="n2t-Xv-zZ2"/>
-                            <constraint firstItem="xNB-4c-n0u" firstAttribute="top" secondItem="ss6-nn-AFd" secondAttribute="top" type="default" id="nCs-ZL-yRe"/>
+                            <constraint firstAttribute="trailing" secondItem="5pX-86-iBs" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="mx6-dt-dQM"/>
+                            <constraint firstItem="sj1-MQ-MYE" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="rie-e4-kGR"/>
+                            <constraint firstItem="icl-gB-bsR" firstAttribute="top" secondItem="ss6-nn-AFd" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="tQW-xr-CSy"/>
+                            <constraint firstItem="ss6-nn-AFd" firstAttribute="top" secondItem="CFz-me-KLR" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="uIL-fY-eb4"/>
+                            <constraint firstItem="0lL-Sa-LMh" firstAttribute="bottom" secondItem="sj1-MQ-MYE" secondAttribute="bottom" type="default" id="vKR-2f-hPf"/>
                             <constraint firstAttribute="bottom" secondItem="icl-gB-bsR" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="wM1-t0-ENp"/>
                         </constraints>
                     </view>
@@ -108,6 +131,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-23" y="132"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="idS-9G-GsD">
+            <objects>
+                <tableViewController id="vw2-QG-11w" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="49" sectionHeaderHeight="22" sectionFooterHeight="22" id="PDI-2i-SH6">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="49" id="zWa-Lo-nrO" customClass="fixitTicketTableCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="49"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qR-cP-m7B">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="181" id="8NE-vL-VEr"/>
+                                                <constraint firstAttribute="height" constant="33" id="HHQ-oh-sxI"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AMh-QA-PYt" customClass="ComplexityMeter">
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="AMh-QA-PYt" secondAttribute="trailing" constant="10" id="alk-Gb-gQb"/>
+                                    <constraint firstItem="2qR-cP-m7B" firstAttribute="leading" secondItem="zWa-Lo-nrO" secondAttribute="leading" constant="10" id="hlk-1p-4kY"/>
+                                    <constraint firstItem="2qR-cP-m7B" firstAttribute="top" secondItem="zWa-Lo-nrO" secondAttribute="top" constant="7" id="iGJ-e6-bMl"/>
+                                    <constraint firstItem="AMh-QA-PYt" firstAttribute="bottom" secondItem="2qR-cP-m7B" secondAttribute="bottom" type="default" id="jED-zl-cO4"/>
+                                    <constraint firstItem="AMh-QA-PYt" firstAttribute="leading" secondItem="2qR-cP-m7B" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="lhd-Hc-4iM"/>
+                                    <constraint firstItem="AMh-QA-PYt" firstAttribute="top" secondItem="2qR-cP-m7B" secondAttribute="top" type="default" id="tDR-BM-9Qm"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="complexityMeter" destination="AMh-QA-PYt" id="h8L-NA-7ZP"/>
+                                    <outlet property="ticketTitle" destination="2qR-cP-m7B" id="iN1-kA-5NC"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vw2-QG-11w" id="rpl-PF-wV6"/>
+                            <outlet property="delegate" destination="vw2-QG-11w" id="Svq-ur-y0X"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L9m-Wt-oHO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="525" y="361"/>
         </scene>
         <!--Fixit View Controller-->
         <scene sceneID="nJw-I7-OXw">
@@ -117,6 +195,11 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="NoisebridgeBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="SCe-wW-jHG">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="ycS-bf-rr0"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmu-XI-H5I">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -134,7 +217,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="SubmitFixit:" destination="3UZ-tF-b31" eventType="touchUpInside" id="rSJ-5A-SRE"/>
-                                    <segue destination="2" kind="modal" id="tvM-gJ-v0C"/>
+                                    <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="tvM-gJ-v0C"/>
                                 </connections>
                             </button>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="   Problem Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDf-aX-7Oh">
@@ -152,7 +235,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vJ-fS-crE">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="D1c-Vw-BWp"/>
+                                    <constraint firstAttribute="width" constant="136" id="2ib-cY-Lcz"/>
                                     <constraint firstAttribute="height" constant="35" id="jc3-nw-HlH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="23"/>
@@ -166,7 +249,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="styleId" value="returnHomeButton"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="2" kind="modal" modalTransitionStyle="coverVertical" id="NEn-Ag-nok"/>
+                                    <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="NEn-Ag-nok"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ita-ap-0NR">
@@ -192,9 +275,6 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mY0-7y-w9A">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="CUj-Mx-Grs"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="23"/>
                                 <state key="normal" title="Clear">
                                     <color key="titleColor" red="0.27450980390000002" green="0.28235294119999998" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -224,31 +304,40 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000014" contentMode="scaleToFill" image="NoisebridgeBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="tpC-0A-syM"/>
                         </subviews>
                         <color key="backgroundColor" red="0.27450980392156865" green="0.28235294117647058" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Cem-Xa-aux" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="3WF-7u-tcL"/>
-                            <constraint firstItem="Cem-Xa-aux" firstAttribute="top" secondItem="mY0-7y-w9A" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="5dG-Kc-jT9"/>
                             <constraint firstAttribute="trailing" secondItem="Ita-ap-0NR" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="5yd-0k-5mi"/>
+                            <constraint firstItem="SCe-wW-jHG" firstAttribute="top" secondItem="UQ5-cl-9Pe" secondAttribute="top" constant="94" id="8ov-a4-whX"/>
                             <constraint firstItem="mY0-7y-w9A" firstAttribute="top" secondItem="UQ5-cl-9Pe" secondAttribute="top" constant="20" symbolic="YES" type="default" id="AOu-G1-rMS"/>
-                            <constraint firstAttribute="trailing" secondItem="mY0-7y-w9A" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="CZ5-3W-sin"/>
                             <constraint firstItem="Loe-ol-6iy" firstAttribute="top" secondItem="9vJ-fS-crE" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="CeH-eT-bTx"/>
                             <constraint firstAttribute="trailing" secondItem="Loe-ol-6iy" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="DXF-OR-UwD"/>
                             <constraint firstAttribute="trailing" secondItem="bDf-aX-7Oh" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Dmf-8r-wIm"/>
                             <constraint firstItem="Cem-Xa-aux" firstAttribute="leading" secondItem="UQ5-cl-9Pe" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="EjA-Db-Njg"/>
                             <constraint firstItem="9vJ-fS-crE" firstAttribute="leading" secondItem="UQ5-cl-9Pe" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Gp6-FI-rq5"/>
                             <constraint firstItem="Ita-ap-0NR" firstAttribute="leading" secondItem="UQ5-cl-9Pe" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Obw-UM-zlQ"/>
+                            <constraint firstItem="tpC-0A-syM" firstAttribute="leading" secondItem="UQ5-cl-9Pe" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="PRo-Gi-wVH"/>
+                            <constraint firstItem="mY0-7y-w9A" firstAttribute="leading" secondItem="9vJ-fS-crE" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Qs7-Iv-LRi"/>
                             <constraint firstAttribute="trailing" secondItem="kmu-XI-H5I" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Re0-ke-hps"/>
                             <constraint firstItem="Cem-Xa-aux" firstAttribute="top" secondItem="9vJ-fS-crE" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="SL5-nH-ieY"/>
                             <constraint firstItem="bDf-aX-7Oh" firstAttribute="top" secondItem="Cem-Xa-aux" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Te6-n4-1dT"/>
                             <constraint firstItem="kmu-XI-H5I" firstAttribute="top" secondItem="Ita-ap-0NR" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="UwG-w4-wem"/>
                             <constraint firstItem="Ita-ap-0NR" firstAttribute="top" secondItem="bDf-aX-7Oh" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="V5o-pC-1HZ"/>
+                            <constraint firstAttribute="trailing" secondItem="mY0-7y-w9A" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="XuC-Kf-zcK"/>
+                            <constraint firstItem="SCe-wW-jHG" firstAttribute="bottom" secondItem="tpC-0A-syM" secondAttribute="bottom" type="default" id="YJp-Xz-PVG"/>
+                            <constraint firstItem="SCe-wW-jHG" firstAttribute="top" secondItem="tpC-0A-syM" secondAttribute="top" type="default" id="bOf-oO-F9S"/>
                             <constraint firstItem="bDf-aX-7Oh" firstAttribute="top" secondItem="Loe-ol-6iy" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="dWp-Df-5QG"/>
+                            <constraint firstItem="SCe-wW-jHG" firstAttribute="leading" secondItem="UQ5-cl-9Pe" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="eSG-jW-2PI"/>
                             <constraint firstItem="9vJ-fS-crE" firstAttribute="top" secondItem="UQ5-cl-9Pe" secondAttribute="top" constant="20" symbolic="YES" type="default" id="gJC-Qi-KXe"/>
                             <constraint firstAttribute="bottom" secondItem="kmu-XI-H5I" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="igs-EM-YgK"/>
                             <constraint firstItem="bDf-aX-7Oh" firstAttribute="leading" secondItem="UQ5-cl-9Pe" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="k4j-hy-uvc"/>
                             <constraint firstItem="kmu-XI-H5I" firstAttribute="leading" secondItem="UQ5-cl-9Pe" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="oNH-2G-Ae6"/>
+                            <constraint firstItem="Cem-Xa-aux" firstAttribute="top" secondItem="mY0-7y-w9A" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="rKI-Yd-CRh"/>
+                            <constraint firstAttribute="trailing" secondItem="tpC-0A-syM" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="tue-vw-aUj"/>
                             <constraint firstItem="Loe-ol-6iy" firstAttribute="leading" secondItem="UQ5-cl-9Pe" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="vHX-f8-Ai9"/>
+                            <constraint firstAttribute="trailing" secondItem="SCe-wW-jHG" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="wTc-5p-1FY"/>
                         </constraints>
                     </view>
                     <connections>
@@ -262,6 +351,45 @@
             <point key="canvasLocation" x="523" y="-301"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NoisebridgeBackground.png" width="359" height="359"/>
+        <image name="beer-mug@2x.png" width="44" height="54"/>
+        <image name="calendar@2x.png" width="46" height="50"/>
+        <image name="lock@2x.png" width="40" height="48"/>
+        <image name="tag@2x.png" width="44" height="44"/>
+        <image name="wrench@2x.png" width="48" height="48"/>
+    </resources>
+    <classes>
+        <class className="ComplexityMeter" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ComplexityMeter.h"/>
+        </class>
+        <class className="FixitViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FixitViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="ClearButton:"/>
+                <relationship kind="action" name="SubmitFixit:"/>
+                <relationship kind="outlet" name="complexityMeter" candidateClass="ComplexityMeter"/>
+                <relationship kind="outlet" name="ticketDescription" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="ticketTitle" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="NoisebridgeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NoisebridgeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doorUnlock:"/>
+            </relationships>
+        </class>
+        <class className="fixitTicketTableCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/fixitTicketTableCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="complexityMeter" candidateClass="ComplexityMeter"/>
+                <relationship kind="outlet" name="ticketTitle" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

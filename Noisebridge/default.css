@@ -21,10 +21,23 @@ text-view{
     background-color: white; 
     border-width: none;
     border-radius: 3px;
-
 }
 
 #returnHomeButton{
     background-color: white;
+    border-radius: 3px;
+}
+
+#greyHomeButton{
+    background-color: #B4B4B4;;
     border-radius: 3px
+}
+
+#whiteHomeButton{
+    background-color: white;
+    border-radius: 3px;
+}
+
+#clearImage{
+    opacity: 0.5;
 }

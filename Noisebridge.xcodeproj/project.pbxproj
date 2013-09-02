@@ -42,6 +42,13 @@
 		9475D74E17D03CB60033F9AA /* Empty-Gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 9475D74D17D03CB60033F9AA /* Empty-Gear.png */; };
 		9475D75117D0400B0033F9AA /* FixitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9475D75017D040080033F9AA /* FixitViewController.m */; };
 		9475D75317D11EB20033F9AA /* Full-Gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 9475D75217D11EAD0033F9AA /* Full-Gear.png */; };
+		9475D75517D44B630033F9AA /* wrench@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9475D75417D44B630033F9AA /* wrench@2x.png */; };
+		9475D75717D44E1B0033F9AA /* tag@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9475D75617D44E1B0033F9AA /* tag@2x.png */; };
+		9475D75917D44EC30033F9AA /* lock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9475D75817D44EC30033F9AA /* lock@2x.png */; };
+		9475D75B17D44F0D0033F9AA /* calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9475D75A17D44F0D0033F9AA /* calendar@2x.png */; };
+		9475D76117D450CE0033F9AA /* beer-mug@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9475D76017D450CE0033F9AA /* beer-mug@2x.png */; };
+		9475D76517D48B7D0033F9AA /* NoisebridgeBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 9475D76417D48B7A0033F9AA /* NoisebridgeBackground.png */; };
+		9475D76817D4B6500033F9AA /* fixitTicketTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9475D76717D4B64F0033F9AA /* fixitTicketTableCell.m */; };
 		94A9EAF217CE6C0600C885A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A9EAF117CE6C0600C885A9 /* UIKit.framework */; };
 		94A9EAF417CE6C0600C885A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A9EAF317CE6C0600C885A9 /* Foundation.framework */; };
 		94A9EAF617CE6C0600C885A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A9EAF517CE6C0600C885A9 /* CoreGraphics.framework */; };
@@ -120,6 +127,14 @@
 		9475D74F17D040080033F9AA /* FixitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixitViewController.h; sourceTree = "<group>"; };
 		9475D75017D040080033F9AA /* FixitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixitViewController.m; sourceTree = "<group>"; };
 		9475D75217D11EAD0033F9AA /* Full-Gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Full-Gear.png"; sourceTree = "<group>"; };
+		9475D75417D44B630033F9AA /* wrench@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wrench@2x.png"; sourceTree = "<group>"; };
+		9475D75617D44E1B0033F9AA /* tag@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tag@2x.png"; sourceTree = "<group>"; };
+		9475D75817D44EC30033F9AA /* lock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock@2x.png"; sourceTree = "<group>"; };
+		9475D75A17D44F0D0033F9AA /* calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar@2x.png"; sourceTree = "<group>"; };
+		9475D76017D450CE0033F9AA /* beer-mug@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer-mug@2x.png"; sourceTree = "<group>"; };
+		9475D76417D48B7A0033F9AA /* NoisebridgeBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoisebridgeBackground.png; sourceTree = "<group>"; };
+		9475D76617D4B64F0033F9AA /* fixitTicketTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fixitTicketTableCell.h; sourceTree = "<group>"; };
+		9475D76717D4B64F0033F9AA /* fixitTicketTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fixitTicketTableCell.m; sourceTree = "<group>"; };
 		94A9EAEE17CE6C0600C885A9 /* Noisebridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Noisebridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A9EAF117CE6C0600C885A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		94A9EAF317CE6C0600C885A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -325,6 +340,8 @@
 			children = (
 				9475D74F17D040080033F9AA /* FixitViewController.h */,
 				9475D75017D040080033F9AA /* FixitViewController.m */,
+				9475D76617D4B64F0033F9AA /* fixitTicketTableCell.h */,
+				9475D76717D4B64F0033F9AA /* fixitTicketTableCell.m */,
 				9475D74717D019D40033F9AA /* TouchDisplays */,
 				9475D6C917CE929D0033F9AA /* Buttons */,
 				94A9EB2317CE761F00C885A9 /* Images */,
@@ -338,6 +355,12 @@
 				9475D74D17D03CB60033F9AA /* Empty-Gear.png */,
 				9475D75217D11EAD0033F9AA /* Full-Gear.png */,
 				94A9EB2117CE761600C885A9 /* Ticketing-Icon.png */,
+				9475D75A17D44F0D0033F9AA /* calendar@2x.png */,
+				9475D75817D44EC30033F9AA /* lock@2x.png */,
+				9475D76017D450CE0033F9AA /* beer-mug@2x.png */,
+				9475D75617D44E1B0033F9AA /* tag@2x.png */,
+				9475D75417D44B630033F9AA /* wrench@2x.png */,
+				9475D76417D48B7A0033F9AA /* NoisebridgeBackground.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -403,6 +426,12 @@
 				9475D74217CFDE510033F9AA /* default.css in Resources */,
 				9475D74E17D03CB60033F9AA /* Empty-Gear.png in Resources */,
 				9475D75317D11EB20033F9AA /* Full-Gear.png in Resources */,
+				9475D75517D44B630033F9AA /* wrench@2x.png in Resources */,
+				9475D75717D44E1B0033F9AA /* tag@2x.png in Resources */,
+				9475D75917D44EC30033F9AA /* lock@2x.png in Resources */,
+				9475D75B17D44F0D0033F9AA /* calendar@2x.png in Resources */,
+				9475D76117D450CE0033F9AA /* beer-mug@2x.png in Resources */,
+				9475D76517D48B7D0033F9AA /* NoisebridgeBackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +472,7 @@
 				9475D73C17CEDF370033F9AA /* OpenGateButton.m in Sources */,
 				9475D74A17D01A6A0033F9AA /* ComplexityMeter.m in Sources */,
 				9475D75117D0400B0033F9AA /* FixitViewController.m in Sources */,
+				9475D76817D4B6500033F9AA /* fixitTicketTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
