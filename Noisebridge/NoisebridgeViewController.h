@@ -10,4 +10,6 @@
 
 @interface NoisebridgeViewController : UIViewController
 
+- (IBAction)doorUnlock:(id)sender;
+
 @end

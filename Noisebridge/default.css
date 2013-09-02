@@ -1,0 +1,30 @@
+#ticketTitle {
+    background-color: #B4B4B4;
+    border-radius: 3px;
+}
+
+#ticketDescription {
+    background-color: white;
+    border-radius: 3px;
+}
+
+text-view{
+    background-color: white;
+    border-radius: 3px;
+}
+#clearButton{
+    background-color: #B4B4B4;
+    border-radius: 3px
+}
+
+#ticketSubmit{
+    background-color: white; 
+    border-width: none;
+    border-radius: 3px;
+
+}
+
+#returnHomeButton{
+    background-color: white;
+    border-radius: 3px
+}
