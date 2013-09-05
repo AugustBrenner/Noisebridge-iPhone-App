@@ -62,6 +62,11 @@
 		94A9EB1717CE6D3300C885A9 /* FixitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A9EB1617CE6D3300C885A9 /* FixitButton.m */; };
 		94B7F35317D6FC7A0066707C /* TicketListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B7F35217D6FC7A0066707C /* TicketListViewController.m */; };
 		94B7F35617D824170066707C /* TicketSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B7F35517D824170066707C /* TicketSummaryViewController.m */; };
+		94B7F35817D84C3B0066707C /* NoisebridgeAppIcon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B7F35717D84C3B0066707C /* NoisebridgeAppIcon57.png */; };
+		94B7F35A17D84C440066707C /* NoisebridgeAppIcon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B7F35917D84C440066707C /* NoisebridgeAppIcon114.png */; };
+		94B7F35C17D852B30066707C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B7F35B17D852B30066707C /* Default.png */; };
+		94B7F35E17D852C90066707C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B7F35D17D852C90066707C /* Default@2x.png */; };
+		94B7F36017D852D60066707C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B7F35F17D852D60066707C /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -157,6 +162,11 @@
 		94B7F35217D6FC7A0066707C /* TicketListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketListViewController.m; sourceTree = "<group>"; };
 		94B7F35417D824160066707C /* TicketSummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketSummaryViewController.h; sourceTree = "<group>"; };
 		94B7F35517D824170066707C /* TicketSummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketSummaryViewController.m; sourceTree = "<group>"; };
+		94B7F35717D84C3B0066707C /* NoisebridgeAppIcon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoisebridgeAppIcon57.png; sourceTree = SOURCE_ROOT; };
+		94B7F35917D84C440066707C /* NoisebridgeAppIcon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoisebridgeAppIcon114.png; sourceTree = SOURCE_ROOT; };
+		94B7F35B17D852B30066707C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		94B7F35D17D852C90066707C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		94B7F35F17D852D60066707C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -360,6 +370,11 @@
 		94A9EB2317CE761F00C885A9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				94B7F35F17D852D60066707C /* Default-568h@2x.png */,
+				94B7F35D17D852C90066707C /* Default@2x.png */,
+				94B7F35B17D852B30066707C /* Default.png */,
+				94B7F35917D84C440066707C /* NoisebridgeAppIcon114.png */,
+				94B7F35717D84C3B0066707C /* NoisebridgeAppIcon57.png */,
 				9475D74D17D03CB60033F9AA /* Empty-Gear.png */,
 				9475D75217D11EAD0033F9AA /* Full-Gear.png */,
 				9475D75A17D44F0D0033F9AA /* calendar@2x.png */,
@@ -438,6 +453,11 @@
 				9475D75B17D44F0D0033F9AA /* calendar@2x.png in Resources */,
 				9475D76117D450CE0033F9AA /* beer-mug@2x.png in Resources */,
 				9475D76517D48B7D0033F9AA /* NoisebridgeBackground.png in Resources */,
+				94B7F35817D84C3B0066707C /* NoisebridgeAppIcon57.png in Resources */,
+				94B7F35A17D84C440066707C /* NoisebridgeAppIcon114.png in Resources */,
+				94B7F35C17D852B30066707C /* Default.png in Resources */,
+				94B7F35E17D852C90066707C /* Default@2x.png in Resources */,
+				94B7F36017D852D60066707C /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

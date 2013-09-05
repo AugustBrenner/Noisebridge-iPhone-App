@@ -100,7 +100,7 @@
         // End progress HUD
         [MBProgressHUD hideHUDForView:self.view animated:YES];
         
-        [self performSegueWithIdentifier: @"TicketListViewController" sender: self];
+        [self performSegueWithIdentifier: @"ticketListViewController" sender: self];
         
         // Failed Request
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {

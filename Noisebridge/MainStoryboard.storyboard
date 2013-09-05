@@ -135,7 +135,7 @@
         <!--Ticket List View Controller-->
         <scene sceneID="5zG-ot-O8s">
             <objects>
-                <viewController storyboardIdentifier="TicketListViewController" id="cLt-d2-Cqb" customClass="TicketListViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="" id="cLt-d2-Cqb" customClass="TicketListViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EH0-RF-h7x">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -430,6 +430,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="SubmitFixit:" destination="3UZ-tF-b31" eventType="touchUpInside" id="rSJ-5A-SRE"/>
+                                    <segue destination="cLt-d2-Cqb" kind="modal" identifier="ticketListViewController" id="B7n-oB-wx7"/>
                                 </connections>
                             </button>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="   Problem Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDf-aX-7Oh">
@@ -626,8 +627,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Qow-IV-Csw"/>
-        <segue reference="ArC-34-yac"/>
+        <segue reference="NEn-Ag-nok"/>
         <segue reference="COd-C1-RTI"/>
+        <segue reference="B7n-oB-wx7"/>
     </inferredMetricsTieBreakers>
 </document>

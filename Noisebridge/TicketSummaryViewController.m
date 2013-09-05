@@ -27,16 +27,37 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.ticketTitle.text = [self.ticketSummary objectForKey:@"title"];
-    self.ticketDescription.text = [self.ticketSummary objectForKey:@"description"];
-    self.dateCreated.text = [self.ticketSummary objectForKey:@"created_at"];
+    
+    if (![[self.ticketSummary objectForKey:@"title"] isKindOfClass:[NSNull class]]){
+        self.ticketTitle.text = [self.ticketSummary objectForKey:@"title"];
+    } else {
+        self.ticketTitle.text = @"N/A";
+    }
+    if (![[self.ticketSummary objectForKey:@"due_at"] isKindOfClass:[NSNull class]]){
+        self.ticketDescription.text = [self.ticketSummary objectForKey:@"description"];
+    } else {
+        self.ticketDescription.text = @"N/A";
+    }
+    if (![[self.ticketSummary objectForKey:@"created_at"] isKindOfClass:[NSNull class]]){
+        self.dateCreated.text = [self.ticketSummary objectForKey:@"created_at"];
+    } else {
+        self.dateCreated.text = @"N/A";
+    }
     if (![[self.ticketSummary objectForKey:@"due_at"] isKindOfClass:[NSNull class]]){
         self.dateDue.text = [self.ticketSummary objectForKey:@"due_at"];
     } else {
         self.dateDue.text = @"N/A";
     }
-    self.dateModified.text = [self.ticketSummary objectForKey:@"updated_at"];
-    self.ticketType.text = [self.ticketSummary objectForKey:@"ticket_type"];
+    if (![[self.ticketSummary objectForKey:@"updated_at"] isKindOfClass:[NSNull class]]){
+        self.dateModified.text = [self.ticketSummary objectForKey:@"updated_at"];
+    } else {
+        self.dateModified.text = @"N/A";
+    }
+    if (![[self.ticketSummary objectForKey:@"ticket_type"] isKindOfClass:[NSNull class]]){
+        self.ticketType.text = [self.ticketSummary objectForKey:@"ticket_type"];
+    } else {
+        self.ticketType.text = @"N/A";
+    }
 
     
     /*self.complexityMeter.unSelectedImage = [UIImage imageNamed:@"Full-Gear.png"];
