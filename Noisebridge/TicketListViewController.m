@@ -9,6 +9,7 @@
 #import "TicketListViewController.h"
 #import "AFNetworking.h"
 #import "MBProgressHUD.h"
+#import "TicketSummaryViewController.h"
 
 @interface TicketListViewController ()
 
@@ -121,12 +122,23 @@
     
     
     if( [indexPath row] % 2)
-        [fixitTicketTableCell.contentView setBackgroundColor:[UIColor colorWithRed:180/255.0f green:180/255.0f blue:180/255.0f alpha:1.0f]];
+        [fixitTicketTableCell.contentView setBackgroundColor:[UIColor lightGrayColor]];
     else
         [fixitTicketTableCell.contentView setBackgroundColor:[UIColor whiteColor]];
     
     
     return fixitTicketTableCell;
+}
+
+#pragma mark - Prepare For Segue
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"toTicketSummary"]) {
+        NSIndexPath *indexPath = [self.ticketTable indexPathForSelectedRow];
+        TicketSummaryViewController *ticketSummaryViewController = (TicketSummaryViewController *)segue.destinationViewController;
+        ticketSummaryViewController.ticketSummary = [self.ticketArray objectAtIndex:indexPath.row];
+    }
 }
 
 /*

@@ -61,6 +61,7 @@
 		94A9EB0E17CE6C0600C885A9 /* NoisebridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A9EB0D17CE6C0600C885A9 /* NoisebridgeViewController.m */; };
 		94A9EB1717CE6D3300C885A9 /* FixitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A9EB1617CE6D3300C885A9 /* FixitButton.m */; };
 		94B7F35317D6FC7A0066707C /* TicketListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B7F35217D6FC7A0066707C /* TicketListViewController.m */; };
+		94B7F35617D824170066707C /* TicketSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B7F35517D824170066707C /* TicketSummaryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -154,6 +155,8 @@
 		94A9EB1617CE6D3300C885A9 /* FixitButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixitButton.m; sourceTree = "<group>"; };
 		94B7F35117D6FC7A0066707C /* TicketListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketListViewController.h; sourceTree = "<group>"; };
 		94B7F35217D6FC7A0066707C /* TicketListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketListViewController.m; sourceTree = "<group>"; };
+		94B7F35417D824160066707C /* TicketSummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketSummaryViewController.h; sourceTree = "<group>"; };
+		94B7F35517D824170066707C /* TicketSummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketSummaryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +274,8 @@
 				9475D75017D040080033F9AA /* FixitViewController.m */,
 				94B7F35117D6FC7A0066707C /* TicketListViewController.h */,
 				94B7F35217D6FC7A0066707C /* TicketListViewController.m */,
+				94B7F35417D824160066707C /* TicketSummaryViewController.h */,
+				94B7F35517D824170066707C /* TicketSummaryViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -475,6 +480,7 @@
 				9475D75117D0400B0033F9AA /* FixitViewController.m in Sources */,
 				9475D76817D4B6500033F9AA /* FixitTicketTableCell.m in Sources */,
 				94B7F35317D6FC7A0066707C /* TicketListViewController.m in Sources */,
+				94B7F35617D824170066707C /* TicketSummaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
