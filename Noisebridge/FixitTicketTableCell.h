@@ -9,9 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "ComplexityMeter.h"
 
-@interface fixitTicketTableCell : UITableViewCell
+@protocol FixitTicketTableCellDelegate <NSObject>
+@end
+@interface FixitTicketTableCell : UITableViewCell <ComplexityMeterDelegate>
 
 @property (weak, nonatomic) IBOutlet ComplexityMeter *complexityMeter;
 @property (weak, nonatomic) IBOutlet UILabel *ticketTitle;
+@property (nonatomic, strong) id <FixitTicketTableCellDelegate> delegate;
+
 
 @end

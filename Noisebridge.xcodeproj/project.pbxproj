@@ -48,7 +48,7 @@
 		9475D75B17D44F0D0033F9AA /* calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9475D75A17D44F0D0033F9AA /* calendar@2x.png */; };
 		9475D76117D450CE0033F9AA /* beer-mug@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9475D76017D450CE0033F9AA /* beer-mug@2x.png */; };
 		9475D76517D48B7D0033F9AA /* NoisebridgeBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 9475D76417D48B7A0033F9AA /* NoisebridgeBackground.png */; };
-		9475D76817D4B6500033F9AA /* fixitTicketTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9475D76717D4B64F0033F9AA /* fixitTicketTableCell.m */; };
+		9475D76817D4B6500033F9AA /* FixitTicketTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9475D76717D4B64F0033F9AA /* FixitTicketTableCell.m */; };
 		94A9EAF217CE6C0600C885A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A9EAF117CE6C0600C885A9 /* UIKit.framework */; };
 		94A9EAF417CE6C0600C885A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A9EAF317CE6C0600C885A9 /* Foundation.framework */; };
 		94A9EAF617CE6C0600C885A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A9EAF517CE6C0600C885A9 /* CoreGraphics.framework */; };
@@ -60,7 +60,7 @@
 		94A9EB0817CE6C0600C885A9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94A9EB0717CE6C0600C885A9 /* Default-568h@2x.png */; };
 		94A9EB0E17CE6C0600C885A9 /* NoisebridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A9EB0D17CE6C0600C885A9 /* NoisebridgeViewController.m */; };
 		94A9EB1717CE6D3300C885A9 /* FixitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A9EB1617CE6D3300C885A9 /* FixitButton.m */; };
-		94A9EB2217CE761600C885A9 /* Ticketing-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 94A9EB2117CE761600C885A9 /* Ticketing-Icon.png */; };
+		94B7F35317D6FC7A0066707C /* TicketListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B7F35217D6FC7A0066707C /* TicketListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -133,8 +133,8 @@
 		9475D75A17D44F0D0033F9AA /* calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar@2x.png"; sourceTree = "<group>"; };
 		9475D76017D450CE0033F9AA /* beer-mug@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer-mug@2x.png"; sourceTree = "<group>"; };
 		9475D76417D48B7A0033F9AA /* NoisebridgeBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoisebridgeBackground.png; sourceTree = "<group>"; };
-		9475D76617D4B64F0033F9AA /* fixitTicketTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fixitTicketTableCell.h; sourceTree = "<group>"; };
-		9475D76717D4B64F0033F9AA /* fixitTicketTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fixitTicketTableCell.m; sourceTree = "<group>"; };
+		9475D76617D4B64F0033F9AA /* FixitTicketTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixitTicketTableCell.h; sourceTree = "<group>"; };
+		9475D76717D4B64F0033F9AA /* FixitTicketTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixitTicketTableCell.m; sourceTree = "<group>"; };
 		94A9EAEE17CE6C0600C885A9 /* Noisebridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Noisebridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A9EAF117CE6C0600C885A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		94A9EAF317CE6C0600C885A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -152,7 +152,8 @@
 		94A9EB0D17CE6C0600C885A9 /* NoisebridgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoisebridgeViewController.m; sourceTree = "<group>"; };
 		94A9EB1517CE6D3300C885A9 /* FixitButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixitButton.h; sourceTree = "<group>"; };
 		94A9EB1617CE6D3300C885A9 /* FixitButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixitButton.m; sourceTree = "<group>"; };
-		94A9EB2117CE761600C885A9 /* Ticketing-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ticketing-Icon.png"; path = "images/Ticketing-Icon.png"; sourceTree = "<group>"; };
+		94B7F35117D6FC7A0066707C /* TicketListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketListViewController.h; sourceTree = "<group>"; };
+		94B7F35217D6FC7A0066707C /* TicketListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,13 +262,17 @@
 			name = AFNetworking;
 			sourceTree = "<group>";
 		};
-		9475D74717D019D40033F9AA /* TouchDisplays */ = {
+		9475D76917D5206F0033F9AA /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9475D74817D01A6A0033F9AA /* ComplexityMeter.h */,
-				9475D74917D01A6A0033F9AA /* ComplexityMeter.m */,
+				94A9EB0C17CE6C0600C885A9 /* NoisebridgeViewController.h */,
+				94A9EB0D17CE6C0600C885A9 /* NoisebridgeViewController.m */,
+				9475D74F17D040080033F9AA /* FixitViewController.h */,
+				9475D75017D040080033F9AA /* FixitViewController.m */,
+				94B7F35117D6FC7A0066707C /* TicketListViewController.h */,
+				94B7F35217D6FC7A0066707C /* TicketListViewController.m */,
 			);
-			name = TouchDisplays;
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		94A9EAE517CE6C0600C885A9 = {
@@ -308,8 +313,7 @@
 				94A9EB0017CE6C0600C885A9 /* NoisebridgeAppDelegate.h */,
 				94A9EB0117CE6C0600C885A9 /* NoisebridgeAppDelegate.m */,
 				9475D6C717CE900D0033F9AA /* MainStoryboard.storyboard */,
-				94A9EB0C17CE6C0600C885A9 /* NoisebridgeViewController.h */,
-				94A9EB0D17CE6C0600C885A9 /* NoisebridgeViewController.m */,
+				9475D76917D5206F0033F9AA /* View Controllers */,
 				94A9EB1417CE6D1700C885A9 /* Views */,
 				94A9EAF817CE6C0600C885A9 /* Supporting Files */,
 			);
@@ -338,11 +342,10 @@
 		94A9EB1417CE6D1700C885A9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9475D74F17D040080033F9AA /* FixitViewController.h */,
-				9475D75017D040080033F9AA /* FixitViewController.m */,
-				9475D76617D4B64F0033F9AA /* fixitTicketTableCell.h */,
-				9475D76717D4B64F0033F9AA /* fixitTicketTableCell.m */,
-				9475D74717D019D40033F9AA /* TouchDisplays */,
+				9475D76617D4B64F0033F9AA /* FixitTicketTableCell.h */,
+				9475D76717D4B64F0033F9AA /* FixitTicketTableCell.m */,
+				9475D74817D01A6A0033F9AA /* ComplexityMeter.h */,
+				9475D74917D01A6A0033F9AA /* ComplexityMeter.m */,
 				9475D6C917CE929D0033F9AA /* Buttons */,
 				94A9EB2317CE761F00C885A9 /* Images */,
 			);
@@ -354,7 +357,6 @@
 			children = (
 				9475D74D17D03CB60033F9AA /* Empty-Gear.png */,
 				9475D75217D11EAD0033F9AA /* Full-Gear.png */,
-				94A9EB2117CE761600C885A9 /* Ticketing-Icon.png */,
 				9475D75A17D44F0D0033F9AA /* calendar@2x.png */,
 				9475D75817D44EC30033F9AA /* lock@2x.png */,
 				9475D76017D450CE0033F9AA /* beer-mug@2x.png */,
@@ -421,7 +423,6 @@
 				94A9EB0417CE6C0600C885A9 /* Default.png in Resources */,
 				94A9EB0617CE6C0600C885A9 /* Default@2x.png in Resources */,
 				94A9EB0817CE6C0600C885A9 /* Default-568h@2x.png in Resources */,
-				94A9EB2217CE761600C885A9 /* Ticketing-Icon.png in Resources */,
 				9475D6C817CE900D0033F9AA /* MainStoryboard.storyboard in Resources */,
 				9475D74217CFDE510033F9AA /* default.css in Resources */,
 				9475D74E17D03CB60033F9AA /* Empty-Gear.png in Resources */,
@@ -472,7 +473,8 @@
 				9475D73C17CEDF370033F9AA /* OpenGateButton.m in Sources */,
 				9475D74A17D01A6A0033F9AA /* ComplexityMeter.m in Sources */,
 				9475D75117D0400B0033F9AA /* FixitViewController.m in Sources */,
-				9475D76817D4B6500033F9AA /* fixitTicketTableCell.m in Sources */,
+				9475D76817D4B6500033F9AA /* FixitTicketTableCell.m in Sources */,
+				94B7F35317D6FC7A0066707C /* TicketListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,21 +6,15 @@
 //  Copyright (c) 2013 AugustRyanBrenner. All rights reserved.
 //
 
-#import "fixitTicketTableCell.h"
+#import "FixitTicketTableCell.h"
 
-@implementation fixitTicketTableCell
+@implementation FixitTicketTableCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
-        self.complexityMeter.unSelectedImage = [UIImage imageNamed:@"Full-Gear.png"];
-        self.complexityMeter.selectedImage = [UIImage imageNamed:@"Empty-Gear.png"];
-        self.complexityMeter.complexity = 0;
-        self.complexityMeter.editable = YES;
-        self.complexityMeter.maxComplexity = 8;
-        self.complexityMeter.delegate = self;
     }
     return self;
 }
@@ -32,4 +26,7 @@
     // Configure the view for the selected state
 }
 
+- (void)complexityMeter:(ComplexityMeter *)complexityMeter meterDidChange:(int)complexity {
+    
+}
 @end

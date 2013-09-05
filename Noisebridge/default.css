@@ -14,7 +14,7 @@ text-view{
 }
 #clearButton{
     background-color: #B4B4B4;
-    border-radius: 3px
+    border-radius: 3px;
 }
 
 #ticketSubmit{
@@ -30,14 +30,10 @@ text-view{
 
 #greyHomeButton{
     background-color: #B4B4B4;;
-    border-radius: 3px
+    border-radius: 3px;
 }
 
 #whiteHomeButton{
     background-color: white;
     border-radius: 3px;
-}
-
-#clearImage{
-    opacity: 0.5;
 }

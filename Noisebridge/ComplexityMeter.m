@@ -5,6 +5,7 @@
 //  Created by Ryan Brenner on 8/29/13.
 //  Copyright (c) 2013 AugustRyanBrenner. All rights reserved.
 //
+//To Do: add 2D viewspace functionality to be enable multiple line complexity display for better output display UI
 
 #import "ComplexityMeter.h"
 
@@ -20,6 +21,7 @@
 @synthesize leftMargin = _leftMargin;
 @synthesize minImageSize = _minImageSize;
 @synthesize delegate = _delegate;
+@synthesize rows = _rows;
 
 - (void)baseInit {
     _unSelectedImage = nil;
@@ -32,6 +34,7 @@
     _leftMargin = 0;
     _minImageSize = CGSizeMake(0, 0);
     _delegate = nil;
+    _rows = 1;
 }
 
 - (void)refresh {

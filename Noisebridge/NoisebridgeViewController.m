@@ -9,7 +9,6 @@
 #import "NoisebridgeViewController.h"
 #import "MBProgressHUD.h"
 #import "AFHTTPClient.h"
-#import "SBJson.h"
 
 @interface NoisebridgeViewController ()
 
@@ -55,10 +54,6 @@
           
           // Failed Request
       } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-          
-          // 403 error handler
-          if ([error.localizedDescription compare: @" Expected status code in (200-299), got 403"] == TRUE) {
-          }
           
           // Log the errors
           NSLog(@"[HTTPClient Error]: %@", error.localizedDescription);

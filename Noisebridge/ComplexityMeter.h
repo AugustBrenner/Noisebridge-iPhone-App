@@ -26,5 +26,6 @@
 @property (assign) int leftMargin;
 @property (assign) CGSize minImageSize;
 @property (assign) id <ComplexityMeterDelegate> delegate;
+@property (assign) int rows;
 
 @end

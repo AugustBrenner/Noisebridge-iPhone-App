@@ -8,7 +8,7 @@
 
 #import "FixitViewController.h"
 #import "MBProgressHUD.h"
-#import "AFHTTPClient.h"
+#import "AFNetworking.h"
 
 @interface FixitViewController ()
 
@@ -59,7 +59,7 @@
     
     // Begin progress HUD
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.labelText = @"Sending Code...";
+    hud.labelText = @"Sending Ticket...";
     
     // Grab title from the text field
     NSString *title = self.ticketTitle.text;
@@ -102,10 +102,6 @@
         
         // Failed Request
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        
-        // 403 error handler
-        if ([error.localizedDescription compare: @" Expected status code in (200-299), got 403"] == TRUE) {
-        }
         
         // Log the errors
         NSLog(@"[HTTPClient Error]: %@", error.localizedDescription);
