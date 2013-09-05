@@ -8,8 +8,16 @@ iPhone app for Noisebridge hacker space
 
 
 
--to do:
-=======
+to do:
+======
+
+Make Ticket View Controller:
+----------------------------
+*Programmatically add placeholders to textview and textinput and change the placeholder color to something visable
+
+*Darken the Complexity gears ever so slightly as to become visable
+
+*make the complexity meter label fade to background once complexity is greater than zero
 
 Tickets Detail View Controller:
 -------------------------------
