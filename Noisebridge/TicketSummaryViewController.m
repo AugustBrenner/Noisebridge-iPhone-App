@@ -28,6 +28,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    _cancelButton.hidden=TRUE;
+    _saveButton.hidden=TRUE;
+    
     if (![[self.ticketSummary objectForKey:@"title"] isKindOfClass:[NSNull class]]){
         self.ticketTitle.text = [self.ticketSummary objectForKey:@"title"];
     } else {
@@ -58,7 +61,6 @@
     } else {
         self.ticketType.text = @"N/A";
     }
-
     
     /*self.complexityMeter.unSelectedImage = [UIImage imageNamed:@"Full-Gear.png"];
     self.complexityMeter.selectedImage = [UIImage imageNamed:@"Empty-Gear.png"];
@@ -74,4 +76,33 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)editButton:(id)sender {
+    // hide the current button set and reveal the editing buttons
+    _editButton.hidden=TRUE;
+    _backButton.hidden=TRUE;
+    _saveButton.hidden=FALSE;
+    _cancelButton.hidden=FALSE;
+    
+    // change editable for all pertinents variables
+}
+
+- (IBAction)cancelButton:(id)sender {
+    // hide the editing button set and reveal the main button set
+    _editButton.hidden=FALSE;
+    _backButton.hidden=FALSE;
+    _saveButton.hidden=TRUE;
+    _cancelButton.hidden=TRUE;
+    
+    // resets all editing changes to pre-editing state
+}
+
+- (IBAction)saveButton:(id)sender {
+    // hide the editing button set and reveal the main button set
+    _editButton.hidden=FALSE;
+    _backButton.hidden=FALSE;
+    _saveButton.hidden=TRUE;
+    _cancelButton.hidden=TRUE;
+    
+    // http request to API to update ticket information
+}
 @end

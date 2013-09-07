@@ -20,5 +20,13 @@
 @property (weak, nonatomic) IBOutlet UITextField *dateModified;
 @property (weak, nonatomic) IBOutlet ComplexityMeter *complexityMeter;
 @property (weak, nonatomic) IBOutlet UITextField *ticketType;
+@property (weak, nonatomic) IBOutlet UIButton *editButton;
+@property (weak, nonatomic) IBOutlet UIButton *saveButton;
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+@property (weak, nonatomic) IBOutlet UIButton *cancelButton;
+
+- (IBAction)editButton:(id)sender;
+- (IBAction)saveButton:(id)sender;
+- (IBAction)cancelButton:(id)sender;
 
 @end

@@ -16,5 +16,6 @@ IBOutlet UITableView* ticketTable;
 
 @property (nonatomic, retain) UITableView* ticketTable;
 @property (strong, nonatomic) NSArray *ticketArray;
+@property (strong, nonatomic) NSDateFormatter *dateFormat;
 
 @end

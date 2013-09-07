@@ -36,7 +36,9 @@
     ticketTable.layer.cornerRadius = 3;
     
     self.ticketArray = [[NSArray alloc] init];
-    
+    self.dateFormat = [[NSDateFormatter alloc] init];
+    [self.dateFormat setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"];
+     
     [self getTickets];
 }
 
@@ -60,9 +62,40 @@
                                          success:^(NSURLRequest *request, NSHTTPURLResponse *response, id responseObject)
                                          {
                                              
-                                             self.ticketArray = responseObject;
+                                             //self.ticketArray = responseObject;
+                                             NSArray *valueSortedArray;
+                                             NSArray *nullValueSortedArray;
+                                             NSMutableArray *valueArray = [NSMutableArray new];
+                                             NSMutableArray *nullValueArray = [NSMutableArray new];
+                                             for (NSDictionary *dict in responseObject) {
+                                                 if (![[dict objectForKey:@"due_at"] isKindOfClass:[NSNull class]]){
+                                                     [valueArray addObject:dict];
+                                                 }
+                                                 else
+                                                 {
+                                                     [nullValueArray addObject:dict];                                                 }
+
+                                             }
+                                             
+
+                                             // sort dated responses object using a descriptor by due date
+                                             NSSortDescriptor *dateDescriptor = [[NSSortDescriptor alloc] initWithKey:@"due_at" ascending:YES];
+                                             NSArray *sortDescriptors = [NSArray arrayWithObject:dateDescriptor];
+                                             valueSortedArray = [valueArray sortedArrayUsingDescriptors:sortDescriptors];
+                                             
+                                             // sort undated responses object using a descriptor by created date
+                                             dateDescriptor = [[NSSortDescriptor alloc] initWithKey:@"created_at" ascending:YES];
+                                             sortDescriptors = [NSArray arrayWithObject:dateDescriptor];
+                                             nullValueSortedArray = [nullValueArray sortedArrayUsingDescriptors:sortDescriptors];
+                                             
+                                             NSArray *adjustedArray = [nullValueSortedArray arrayByAddingObject:[nullValueArray objectAtIndex:0]];
+                                             
+                                             // concatinate the two arrays
+                                             self.ticketArray = [valueSortedArray arrayByAddingObjectsFromArray:adjustedArray];
+                                             
+                                    
                                              [self.ticketTable reloadData];
-                    
+                                             
                                              NSLog(@"JSON RESULT %@, %@", responseObject, [responseObject[0] objectForKey:@"title"]);
                                              [MBProgressHUD hideHUDForView:self.view animated:YES];
                                              
@@ -96,38 +129,54 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"FixitTicketTableCell";
-    FixitTicketTableCell *fixitTicketTableCell = (FixitTicketTableCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (!fixitTicketTableCell) {
-        fixitTicketTableCell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    if([indexPath row] == 0){
+        static NSString *CellIdentifier = @"TableViewHeader";
+        UITableViewCell *tableViewHeader = (UITableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        [tableViewHeader.contentView setBackgroundColor:[UIColor whiteColor]];
+        return tableViewHeader;
     }
-    // Configure the cell...
-    
-    NSDictionary *dict = [self.ticketArray objectAtIndex:indexPath.row];
-    
-    if([dict objectForKey:@"title"] != NULL)
-    {
-        fixitTicketTableCell.ticketTitle.text = [dict objectForKey:@"title"];
+    else{
+        static NSString *CellIdentifier = @"FixitTicketTableCell";
+        FixitTicketTableCell *fixitTicketTableCell = (FixitTicketTableCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (!fixitTicketTableCell) {
+            fixitTicketTableCell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        }
+        // Configure the cell...
+        
+        NSDictionary *dict = [self.ticketArray objectAtIndex:(indexPath.row-1)];
+        
+        // set tableview cell titles from dictionary
+        if([dict objectForKey:@"title"] != NULL)
+        {
+            fixitTicketTableCell.ticketTitle.text = [dict objectForKey:@"title"];
+        }
+        else
+        {
+            fixitTicketTableCell.ticketTitle.text = [NSString stringWithFormat:@"No Fix-It Tickets!"];
+        }
+        
+        
+        // set tableview dates from dictionary
+        if (![[dict objectForKey:@"due_at"] isKindOfClass:[NSNull class]]){
+            NSDate *date = [self.dateFormat dateFromString:[dict objectForKey:@"due_at"]];
+            NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit fromDate:date];
+            fixitTicketTableCell.dueDate.text = [NSString stringWithFormat:@"%d/%d", [components day], [components month]];
+        }
+        else
+        {
+            fixitTicketTableCell.dueDate.text = [NSString stringWithFormat:@""];
+        }
+
+        
+        // set alternating background color for table cells
+        if( [indexPath row] % 2)
+            [fixitTicketTableCell.contentView setBackgroundColor:[UIColor lightGrayColor]];
+        else
+            [fixitTicketTableCell.contentView setBackgroundColor:[UIColor whiteColor]];
+        
+        
+        return fixitTicketTableCell;
     }
-    else
-    {
-        fixitTicketTableCell.detailTextLabel.text = [NSString stringWithFormat:@"No Fix-It Tickets!"];
-    }
-    
-    fixitTicketTableCell.complexityMeter.unSelectedImage = [UIImage imageNamed:@"Full-Gear.png"];
-    fixitTicketTableCell.complexityMeter.selectedImage = [UIImage imageNamed:@"Empty-Gear.png"];
-    fixitTicketTableCell.complexityMeter.complexity = 8;//[dict objectForKey:@"complexity"];
-    fixitTicketTableCell.complexityMeter.editable = NO;
-    fixitTicketTableCell.complexityMeter.maxComplexity = 8;
-    
-    
-    if( [indexPath row] % 2)
-        [fixitTicketTableCell.contentView setBackgroundColor:[UIColor lightGrayColor]];
-    else
-        [fixitTicketTableCell.contentView setBackgroundColor:[UIColor whiteColor]];
-    
-    
-    return fixitTicketTableCell;
 }
 
 #pragma mark - Prepare For Segue

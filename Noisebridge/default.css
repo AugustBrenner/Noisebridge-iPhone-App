@@ -37,3 +37,13 @@ text-view{
     background-color: white;
     border-radius: 3px;
 }
+
+.whiteRound{
+    background-color: white;
+    border-radius: 3px;
+}
+
+.greyRound{
+    background-color: #B4B4B4;
+    border-radius: 3px;
+}

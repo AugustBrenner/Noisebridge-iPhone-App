@@ -49,3 +49,13 @@ Events:
 
 *build out the noiseApp website to include datepicker, calendar display, and API that I can actually interact with,
  as it seems other peoples furver to complete the website is dying out.
+
+ Structure:
+ ----------
+*create a custom class to redirect all Side effects:
+	
+	-All API calls
+
+	-All formatters
+
+	-Structure File System Better

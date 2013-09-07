@@ -26,7 +26,4 @@
     // Configure the view for the selected state
 }
 
-- (void)complexityMeter:(ComplexityMeter *)complexityMeter meterDidChange:(int)complexity {
-    
-}
 @end

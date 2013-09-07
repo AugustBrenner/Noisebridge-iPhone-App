@@ -11,10 +11,11 @@
 
 @protocol FixitTicketTableCellDelegate <NSObject>
 @end
-@interface FixitTicketTableCell : UITableViewCell <ComplexityMeterDelegate>
+@interface FixitTicketTableCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet ComplexityMeter *complexityMeter;
 @property (weak, nonatomic) IBOutlet UILabel *ticketTitle;
+@property (weak, nonatomic) IBOutlet UILabel *dueDate;
+
 @property (nonatomic, strong) id <FixitTicketTableCellDelegate> delegate;
 
 
