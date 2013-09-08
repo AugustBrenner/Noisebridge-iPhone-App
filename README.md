@@ -54,7 +54,7 @@ Events:
  ----------
 *create a custom class to redirect all Side effects:
 	
-	-All API calls
+	-All API calls (DONE)
 
 	-All formatters
 

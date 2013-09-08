@@ -7,6 +7,7 @@
 //
 
 #import "TicketSummaryViewController.h"
+#import "APIHelper.h"
 
 @interface TicketSummaryViewController ()
 
@@ -31,33 +32,33 @@
     _cancelButton.hidden=TRUE;
     _saveButton.hidden=TRUE;
     
-    if (![[self.ticketSummary objectForKey:@"title"] isKindOfClass:[NSNull class]]){
-        self.ticketTitle.text = [self.ticketSummary objectForKey:@"title"];
+    if (![[self.ticketSummary objectForKey:ticketTitleResponse] isKindOfClass:[NSNull class]]){
+        self.ticketTitle.text = [self.ticketSummary objectForKey:ticketTitleResponse];
     } else {
         self.ticketTitle.text = @"N/A";
     }
-    if (![[self.ticketSummary objectForKey:@"due_at"] isKindOfClass:[NSNull class]]){
-        self.ticketDescription.text = [self.ticketSummary objectForKey:@"description"];
+    if (![[self.ticketSummary objectForKey:ticketDescriptionResponse] isKindOfClass:[NSNull class]]){
+        self.ticketDescription.text = [self.ticketSummary objectForKey:ticketDescriptionResponse];
     } else {
         self.ticketDescription.text = @"N/A";
     }
-    if (![[self.ticketSummary objectForKey:@"created_at"] isKindOfClass:[NSNull class]]){
-        self.dateCreated.text = [self.ticketSummary objectForKey:@"created_at"];
+    if (![[self.ticketSummary objectForKey:ticketCreationDateResponse] isKindOfClass:[NSNull class]]){
+        self.dateCreated.text = [self.ticketSummary objectForKey:ticketCreationDateResponse];
     } else {
         self.dateCreated.text = @"N/A";
     }
-    if (![[self.ticketSummary objectForKey:@"due_at"] isKindOfClass:[NSNull class]]){
-        self.dateDue.text = [self.ticketSummary objectForKey:@"due_at"];
+    if (![[self.ticketSummary objectForKey:ticketDueDateResponse] isKindOfClass:[NSNull class]]){
+        self.dateDue.text = [self.ticketSummary objectForKey:ticketDueDateResponse];
     } else {
         self.dateDue.text = @"N/A";
     }
-    if (![[self.ticketSummary objectForKey:@"updated_at"] isKindOfClass:[NSNull class]]){
-        self.dateModified.text = [self.ticketSummary objectForKey:@"updated_at"];
+    if (![[self.ticketSummary objectForKey:ticketModificationDateResponse] isKindOfClass:[NSNull class]]){
+        self.dateModified.text = [self.ticketSummary objectForKey:ticketModificationDateResponse];
     } else {
         self.dateModified.text = @"N/A";
     }
-    if (![[self.ticketSummary objectForKey:@"ticket_type"] isKindOfClass:[NSNull class]]){
-        self.ticketType.text = [self.ticketSummary objectForKey:@"ticket_type"];
+    if (![[self.ticketSummary objectForKey:ticketTypeResponse] isKindOfClass:[NSNull class]]){
+        self.ticketType.text = [self.ticketSummary objectForKey:ticketTypeResponse];
     } else {
         self.ticketType.text = @"N/A";
     }

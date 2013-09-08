@@ -67,6 +67,7 @@
 		94B7F35C17D852B30066707C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B7F35B17D852B30066707C /* Default.png */; };
 		94B7F35E17D852C90066707C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B7F35D17D852C90066707C /* Default@2x.png */; };
 		94B7F36017D852D60066707C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B7F35F17D852D60066707C /* Default-568h@2x.png */; };
+		94B7F36917DBFC0A0066707C /* APIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B7F36817DBFC0A0066707C /* APIHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -167,6 +168,8 @@
 		94B7F35B17D852B30066707C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		94B7F35D17D852C90066707C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		94B7F35F17D852D60066707C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		94B7F36717DBFC0A0066707C /* APIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIHelper.h; sourceTree = "<group>"; };
+		94B7F36817DBFC0A0066707C /* APIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,6 +330,8 @@
 			children = (
 				94A9EB0017CE6C0600C885A9 /* NoisebridgeAppDelegate.h */,
 				94A9EB0117CE6C0600C885A9 /* NoisebridgeAppDelegate.m */,
+				94B7F36717DBFC0A0066707C /* APIHelper.h */,
+				94B7F36817DBFC0A0066707C /* APIHelper.m */,
 				9475D6C717CE900D0033F9AA /* MainStoryboard.storyboard */,
 				9475D76917D5206F0033F9AA /* View Controllers */,
 				94A9EB1417CE6D1700C885A9 /* Views */,
@@ -501,6 +506,7 @@
 				9475D76817D4B6500033F9AA /* FixitTicketTableCell.m in Sources */,
 				94B7F35317D6FC7A0066707C /* TicketListViewController.m in Sources */,
 				94B7F35617D824170066707C /* TicketSummaryViewController.m in Sources */,
+				94B7F36917DBFC0A0066707C /* APIHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

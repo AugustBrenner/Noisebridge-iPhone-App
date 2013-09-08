@@ -9,6 +9,7 @@
 #import "FixitViewController.h"
 #import "MBProgressHUD.h"
 #import "AFNetworking.h"
+#import "APIHelper.h"
 
 @interface FixitViewController ()
 
@@ -78,14 +79,14 @@
     
     
     // Prepare HTTP Request
-    NSURL *url = [NSURL URLWithString:@"http://noiseapp.herokuapp.com/tickets.json"];
+    NSURL *url = [NSURL URLWithString:ticketGenerationURL];
     AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:url];
     
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
                             //vendorIdString, @"vendor_id",
-                            title, @"ticket[title]",
-                            description, @"ticket[description]",
-                            complexity, @"ticket[complexity]",
+                            title, ticketTitleParameter,
+                            description, ticketDescriptionParameter,
+                            complexity, ticketComplexityParameter,
                             nil];
     
     [httpClient postPath:@"" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {

@@ -9,6 +9,7 @@
 #import "NoisebridgeViewController.h"
 #import "MBProgressHUD.h"
 #import "AFHTTPClient.h"
+#import "APIHelper.h"
 
 @interface NoisebridgeViewController ()
 
@@ -37,7 +38,7 @@
       
       
       // Prepare HTTP Request
-      NSURL *url = [NSURL URLWithString:@"http://pony.noise/gate/"];
+      NSURL *url = [NSURL URLWithString:gateOpenURL];
       AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:url];
       
       [httpClient getPath:nil parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {

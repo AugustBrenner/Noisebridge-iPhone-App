@@ -10,6 +10,7 @@
 #import "AFNetworking.h"
 #import "MBProgressHUD.h"
 #import "TicketSummaryViewController.h"
+#import "APIHelper.h"
 
 @interface TicketListViewController ()
 
@@ -53,7 +54,7 @@
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.labelText = @"Loading Tickets...";
     
-    NSURL *url = [NSURL URLWithString:@"http://noiseapp.herokuapp.com/tickets.json"];
+    NSURL *url = [NSURL URLWithString:ticketRequestURL];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     //AFNetworking asynchronous url request
@@ -68,7 +69,7 @@
                                              NSMutableArray *valueArray = [NSMutableArray new];
                                              NSMutableArray *nullValueArray = [NSMutableArray new];
                                              for (NSDictionary *dict in responseObject) {
-                                                 if (![[dict objectForKey:@"due_at"] isKindOfClass:[NSNull class]]){
+                                                 if (![[dict objectForKey:ticketDueDateResponse] isKindOfClass:[NSNull class]]){
                                                      [valueArray addObject:dict];
                                                  }
                                                  else
@@ -79,12 +80,12 @@
                                              
 
                                              // sort dated responses object using a descriptor by due date
-                                             NSSortDescriptor *dateDescriptor = [[NSSortDescriptor alloc] initWithKey:@"due_at" ascending:YES];
+                                             NSSortDescriptor *dateDescriptor = [[NSSortDescriptor alloc] initWithKey:ticketDueDateResponse ascending:YES];
                                              NSArray *sortDescriptors = [NSArray arrayWithObject:dateDescriptor];
                                              valueSortedArray = [valueArray sortedArrayUsingDescriptors:sortDescriptors];
                                              
                                              // sort undated responses object using a descriptor by created date
-                                             dateDescriptor = [[NSSortDescriptor alloc] initWithKey:@"created_at" ascending:YES];
+                                             dateDescriptor = [[NSSortDescriptor alloc] initWithKey:ticketCreationDateResponse ascending:YES];
                                              sortDescriptors = [NSArray arrayWithObject:dateDescriptor];
                                              nullValueSortedArray = [nullValueArray sortedArrayUsingDescriptors:sortDescriptors];
                                              
@@ -146,9 +147,9 @@
         NSDictionary *dict = [self.ticketArray objectAtIndex:(indexPath.row-1)];
         
         // set tableview cell titles from dictionary
-        if([dict objectForKey:@"title"] != NULL)
+        if([dict objectForKey:ticketTitleResponse] != NULL)
         {
-            fixitTicketTableCell.ticketTitle.text = [dict objectForKey:@"title"];
+            fixitTicketTableCell.ticketTitle.text = [dict objectForKey:ticketTitleResponse];
         }
         else
         {
@@ -157,8 +158,8 @@
         
         
         // set tableview dates from dictionary
-        if (![[dict objectForKey:@"due_at"] isKindOfClass:[NSNull class]]){
-            NSDate *date = [self.dateFormat dateFromString:[dict objectForKey:@"due_at"]];
+        if (![[dict objectForKey:ticketDueDateResponse] isKindOfClass:[NSNull class]]){
+            NSDate *date = [self.dateFormat dateFromString:[dict objectForKey:ticketDueDateResponse]];
             NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit fromDate:date];
             fixitTicketTableCell.dueDate.text = [NSString stringWithFormat:@"%d/%d", [components day], [components month]];
         }
