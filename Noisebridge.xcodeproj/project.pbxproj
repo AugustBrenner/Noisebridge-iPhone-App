@@ -68,6 +68,8 @@
 		94B7F35E17D852C90066707C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B7F35D17D852C90066707C /* Default@2x.png */; };
 		94B7F36017D852D60066707C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B7F35F17D852D60066707C /* Default-568h@2x.png */; };
 		94B7F36917DBFC0A0066707C /* APIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B7F36817DBFC0A0066707C /* APIHelper.m */; };
+		94B7F36B17DFF3520066707C /* Red-Gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B7F36A17DFF3520066707C /* Red-Gear.png */; };
+		94B7F36D17DFFCA90066707C /* Clear-Gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B7F36C17DFFCA90066707C /* Clear-Gear.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -170,6 +172,8 @@
 		94B7F35F17D852D60066707C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		94B7F36717DBFC0A0066707C /* APIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIHelper.h; sourceTree = "<group>"; };
 		94B7F36817DBFC0A0066707C /* APIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIHelper.m; sourceTree = "<group>"; };
+		94B7F36A17DFF3520066707C /* Red-Gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-Gear.png"; sourceTree = "<group>"; };
+		94B7F36C17DFFCA90066707C /* Clear-Gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clear-Gear.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -380,8 +384,10 @@
 				94B7F35B17D852B30066707C /* Default.png */,
 				94B7F35917D84C440066707C /* NoisebridgeAppIcon114.png */,
 				94B7F35717D84C3B0066707C /* NoisebridgeAppIcon57.png */,
+				94B7F36C17DFFCA90066707C /* Clear-Gear.png */,
 				9475D74D17D03CB60033F9AA /* Empty-Gear.png */,
 				9475D75217D11EAD0033F9AA /* Full-Gear.png */,
+				94B7F36A17DFF3520066707C /* Red-Gear.png */,
 				9475D75A17D44F0D0033F9AA /* calendar@2x.png */,
 				9475D75817D44EC30033F9AA /* lock@2x.png */,
 				9475D76017D450CE0033F9AA /* beer-mug@2x.png */,
@@ -463,6 +469,8 @@
 				94B7F35C17D852B30066707C /* Default.png in Resources */,
 				94B7F35E17D852C90066707C /* Default@2x.png in Resources */,
 				94B7F36017D852D60066707C /* Default-568h@2x.png in Resources */,
+				94B7F36B17DFF3520066707C /* Red-Gear.png in Resources */,
+				94B7F36D17DFFCA90066707C /* Clear-Gear.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

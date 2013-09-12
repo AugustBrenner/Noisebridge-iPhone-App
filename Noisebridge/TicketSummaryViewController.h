@@ -12,6 +12,7 @@
 @interface TicketSummaryViewController : UIViewController <ComplexityMeterDelegate>
 
 @property (strong, nonatomic) NSDictionary *ticketSummary;
+@property (strong, nonatomic) NSDateFormatter *dateFormat;
 
 @property (weak, nonatomic) IBOutlet UITextField *dateCreated;
 @property (weak, nonatomic) IBOutlet UITextView *ticketDescription;
@@ -20,13 +21,20 @@
 @property (weak, nonatomic) IBOutlet UITextField *dateModified;
 @property (weak, nonatomic) IBOutlet ComplexityMeter *complexityMeter;
 @property (weak, nonatomic) IBOutlet UITextField *ticketType;
+@property (weak, nonatomic) IBOutlet UITextField *ticketID;
+@property (weak, nonatomic) IBOutlet UITextField *ticketOwner;
 @property (weak, nonatomic) IBOutlet UIButton *editButton;
 @property (weak, nonatomic) IBOutlet UIButton *saveButton;
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
 @property (weak, nonatomic) IBOutlet UIButton *cancelButton;
 
+
+
 - (IBAction)editButton:(id)sender;
 - (IBAction)saveButton:(id)sender;
 - (IBAction)cancelButton:(id)sender;
+
+- (void)isEditing:(BOOL)selection;
+- (void)populateTable;
 
 @end

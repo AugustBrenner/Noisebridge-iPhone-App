@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Noisebridge/FixitViewController.m"
-         timestampString = "400297411.669314"
+         timestampString = "400393831.546889"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "72"
-         endingLineNumber = "72"
+         startingLineNumber = "78"
+         endingLineNumber = "78"
          landmarkName = "-SubmitFixit:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -73,11 +73,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Noisebridge/TicketSummaryViewController.m"
-         timestampString = "400298545.036444"
+         timestampString = "400545194.248198"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "35"
-         endingLineNumber = "35"
+         startingLineNumber = "43"
+         endingLineNumber = "43"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
@@ -131,6 +131,19 @@
          startingLineNumber = "79"
          endingLineNumber = "79"
          landmarkName = "-getTickets"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Noisebridge/TicketSummaryViewController.m"
+         timestampString = "400552795.683381"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "133"
+         endingLineNumber = "133"
+         landmarkName = "-isEditing:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

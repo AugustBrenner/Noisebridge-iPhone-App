@@ -10,6 +10,7 @@
 #import "MBProgressHUD.h"
 #import "AFNetworking.h"
 #import "APIHelper.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface FixitViewController ()
 
@@ -30,12 +31,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    // complexity meter setup
     self.complexityMeter.unSelectedImage = [UIImage imageNamed:@"Full-Gear.png"];
     self.complexityMeter.selectedImage = [UIImage imageNamed:@"Empty-Gear.png"];
     self.complexityMeter.complexity = 0;
     self.complexityMeter.editable = YES;
     self.complexityMeter.maxComplexity = 8;
     self.complexityMeter.delegate = self;
+    
+    // styling for text view
+    _ticketDescription.layer.cornerRadius = 3;
 }
 
 - (void)didReceiveMemoryWarning
